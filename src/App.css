@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f7ea66;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Berkshire Swash", serif !important;
+}
+
+.shadow-primaryBtn:hover {
+  -webkit-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, 0.479) !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px !important;
+  background-color: var(--color-primary);
+}
