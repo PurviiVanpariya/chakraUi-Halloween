@@ -1,8 +1,10 @@
+import { Box } from "@chakra-ui/react"
+
 const Footer = () => {
   return (
-    <div>
+    <Box className="bg-[#2c0047]">
       Footer
-    </div>
+    </Box>
   )
 }
 
