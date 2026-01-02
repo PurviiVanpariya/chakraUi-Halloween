@@ -17,8 +17,9 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const buttonClassNames = `
-           h-10 sm:h-12 transition duration-500 cursor-pointer rounded-full px-4
-           ${variant === "default" && "bg-primary text-[#7f479a] text-xl shadow-primaryBtn"}
+            transition! duration-500! cursor-pointer! rounded-full
+           ${variant === "default" && "h-10 sm:h-12 bg-primary! text-[#7f479a]! shadow-primaryBtn"}
+           ${variant === "icon" && "size-9 sm:size-10 bg-transparent! text-primary! hover:text-[#2c0047]! hover:bg-primary! border! border-primary! flex items-center justify-center"}
            ${className && className}
        `;
   return (
